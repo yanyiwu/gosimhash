@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/yanyiwu/gosimhash.png?branch=master)](https://travis-ci.org/yanyiwu/gosimhash) 
 [![GoDoc](https://godoc.org/github.com/yanyiwu/gosimhash?status.svg)](https://godoc.org/github.com/yanyiwu/gosimhash)
 
-GoSimhash 是 中文 [simhash] 库的 Go 语言版本分词库。
+GoSimhash 是 中文 [simhash] 库的 Go 语言版本库。
 
 ## 用法
 
