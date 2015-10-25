@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/yanyiwu/gosimhash.png?branch=master)](https://travis-ci.org/yanyiwu/gosimhash) 
 [![GoDoc](https://godoc.org/github.com/yanyiwu/gosimhash?status.svg)](https://godoc.org/github.com/yanyiwu/gosimhash)
+[![Coverage Status](https://coveralls.io/repos/yanyiwu/gosimhash/badge.svg?branch=master&service=github)](https://coveralls.io/github/yanyiwu/gosimhash?branch=master)
 
 GoSimhash 是 中文 [simhash] 库的 Go 语言版本库。
 
