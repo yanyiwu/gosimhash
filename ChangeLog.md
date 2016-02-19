@@ -1,6 +1,6 @@
 # GoSimhash ChangeLog
 
-## next version
+## v0.10.0
 
 + add coveralls testing.
 + add deps/ and remove simhash/ .
