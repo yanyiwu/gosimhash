@@ -1,7 +1,7 @@
 package gosimhash
 
 /*
-#cgo CXXFLAGS: -DLOGGER_LEVEL=LL_WARN -O3 -Wall
+#cgo CXXFLAGS: -I./deps -DLOGGING_LEVEL=LL_WARNING -O3 -Wall
 #include <stdlib.h>
 #include "simhash.h"
 */
