@@ -1,5 +1,9 @@
 # GoSimhash ChangeLog
 
+## next version
+
++ upgrade [simhash] to v0.10.1
+
 ## v0.10.0
 
 + add coveralls testing.
