@@ -44,3 +44,7 @@ go build
 + WeChat: ![image](http://7viirv.com1.z0.glb.clouddn.com/5a7d1b5c0d_yanyiwu_personal_qrcodes.jpg)
 
 [simhash]:http://github.com/yanyiwu/simhash
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/yanyiwu/gosimhash/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
