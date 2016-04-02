@@ -6,6 +6,10 @@
 [![Coverage Status](https://coveralls.io/repos/yanyiwu/gosimhash/badge.svg?branch=master&service=github)](https://coveralls.io/github/yanyiwu/gosimhash?branch=master)
 [![License](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat)](http://yanyiwu.mit-license.org)
 
+[![logo](http://7viirv.com1.z0.glb.clouddn.com/GoSimhashLogo-v1.png)](https://github.com/yanyiwu/gosimhash)
+
+## 简介
+
 GoSimhash 是 中文 [simhash] 去重算法库，Golang版本。
 
 ## 用法
