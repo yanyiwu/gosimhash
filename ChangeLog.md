@@ -1,9 +1,9 @@
 # GoSimhash ChangeLog
 
-## next version
+## v1.0.0
 
 + add go.mod by `go mod init github.com/yanyiwu/gosimhash`
-+ use git actions to build and test.
++ use github/actions to build and test.
 + upgrade [simhash] to v0.10.1
 
 ## v0.10.0
