@@ -1,5 +1,9 @@
 # GoSimhash ChangeLog
 
+## Next
+
++ upgrade [simhash] to v1.1.1
+
 ## v1.0.0
 
 + add go.mod by `go mod init github.com/yanyiwu/gosimhash`

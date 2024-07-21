@@ -2,10 +2,27 @@ package gosimhash
 
 import (
 	"testing"
+	"path"
+	"runtime"
 )
 
+func getCurrentFilePath() string {
+	_, filePath, _, _ := runtime.Caller(1)
+	return filePath
+}
+
 func TestSimhash(t *testing.T) {
-	hasher := New("./dict/jieba.dict.utf8", "./dict/hmm_model.utf8", "./dict/idf.utf8", "./dict/stop_words.utf8")
+	DICT_DIR := path.Join(path.Dir(getCurrentFilePath()), "deps/simhash/submodules/cppjieba/dict")
+	DICT_PATH := path.Join(DICT_DIR, "jieba.dict.utf8")
+	HMM_PATH := path.Join(DICT_DIR, "hmm_model.utf8")
+	IDF_PATH := path.Join(DICT_DIR, "idf.utf8")
+	STOP_WORDS_PATH := path.Join(DICT_DIR, "stop_words.utf8")
+	hasher := New(
+		DICT_PATH, 
+		HMM_PATH, 
+		IDF_PATH,
+		STOP_WORDS_PATH,
+	)
 	defer hasher.Free()
 
 	var s string
