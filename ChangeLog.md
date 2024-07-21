@@ -1,6 +1,6 @@
 # GoSimhash ChangeLog
 
-## Next
+## v1.1.0
 
 + upgrade [simhash] to v1.1.1
 
