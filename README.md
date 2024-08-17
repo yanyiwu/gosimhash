@@ -11,7 +11,7 @@ GoSimhash is a Go version of [simhash] algorithm.
 
 ## Usage
 
-The sample code can be found at [gosimhash-demo](https://github.com/yanyiwu/gosimhash-demo)
+The sample code can be found at [gosimhash-demo](https://github.com/yanyiwu/gosimhash-demo/blob/main/demo.go)
 
 [simhash]:http://github.com/yanyiwu/simhash
 
