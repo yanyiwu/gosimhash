@@ -1,5 +1,10 @@
 # GoSimhash ChangeLog
 
+## v1.2.0
+
++ README:demo: using gosimhash-demo repo instead of example/demo.go
++ api::New() args required -> optional
+
 ## v1.1.0
 
 + upgrade [simhash] to v1.1.1
