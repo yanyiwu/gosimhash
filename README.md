@@ -11,30 +11,7 @@ GoSimhash is a Go version of [simhash] algorithm.
 
 ## Usage
 
-```
-go get github.com/yanyiwu/gosimhash
-```
-
-The sample code can be found at [example/demo.go](example/demo.go)
-
-```
-cd example
-go build
-
-./example -help
-
-# Usage of ./example:
-#     -sentence="我来到北京清华大学":
-#     -top_n=5:
-
-./example
-
-# 我来到北京清华大学 simhash: feb6372a8750eb1d
-
-./example -sentence="南京市长江大桥" -top_n=5
-
-# 南京市长江大桥 simhash: b2c6a622481d8eb2
-```
+The sample code can be found at [gosimhash-demo](https://github.com/yanyiwu/gosimhash-demo)
 
 [simhash]:http://github.com/yanyiwu/simhash
 
