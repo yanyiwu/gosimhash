@@ -11,9 +11,12 @@ type Simhasher struct {
 	hasher C.Simhasher
 }
 
-func New(dict_path, hmm_path, idf_path, stop_words_path string) Simhasher {
+func New(paths ...string) Simhasher {
+	dictpaths := getDictPaths(paths...)
+
+	dpath, hpath, _, ipath, spath := C.CString(dictpaths[0]), C.CString(dictpaths[1]), C.CString(dictpaths[2]), C.CString(dictpaths[3]), C.CString(dictpaths[4])
 	var x Simhasher
-	x.hasher = C.NewSimhasher(C.CString(dict_path), C.CString(hmm_path), C.CString(idf_path), C.CString(stop_words_path))
+	x.hasher = C.NewSimhasher(dpath, hpath, ipath, spath)
 	return x
 }
 

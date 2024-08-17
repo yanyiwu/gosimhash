@@ -13,7 +13,7 @@ var top_n = flag.Int("top_n", 5, "")
 func main() {
 	flag.Parse()
 
-	hasher := gosimhash.New("../dict/jieba.dict.utf8", "../dict/hmm_model.utf8", "../dict/idf.utf8", "../dict/stop_words.utf8")
+	hasher := gosimhash.New()
 	defer hasher.Free()
 	fingerprint := hasher.MakeSimhash(*sentence, *top_n)
 	fmt.Printf("%s simhash: %x\n", *sentence, fingerprint)
