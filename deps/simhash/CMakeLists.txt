@@ -1,6 +1,6 @@
-PROJECT(simhash)
+cmake_minimum_required(VERSION 3.14)
 
-CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
+PROJECT(simhash)
 
 #OPTION(BENCHMARK "Build benchmarking library" ON)
 
