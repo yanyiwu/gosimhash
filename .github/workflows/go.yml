@@ -19,11 +19,6 @@ jobs:
       with:
         go-version: ${{ matrix.go-version }}
 
-    - name: Set up macOS environment
-      if: runner.os == 'macOS'
-      run: |
-        echo "CGO_CXXFLAGS=-std=c++11" >> $GITHUB_ENV
-
     - name: Build
       run: go build -v ./...
 

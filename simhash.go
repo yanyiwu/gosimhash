@@ -1,7 +1,7 @@
 package gosimhash
 
 /*
-#cgo CXXFLAGS: -I./deps/simhash/include -I./deps/simhash/submodules/cppjieba/include -I./deps/simhash/submodules/cppjieba/deps/limonp/include -DLOGGING_LEVEL=LL_WARNING -O3 
+#cgo CXXFLAGS: -I./deps/simhash/include -I./deps/simhash/submodules/cppjieba/include -I./deps/simhash/submodules/cppjieba/deps/limonp/include -DLOGGING_LEVEL=LL_WARNING -O3 -std=c++11
 #include <stdlib.h>
 #include "simhash.h"
 */
