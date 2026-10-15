@@ -7,6 +7,8 @@ package gosimhash
 */
 import "C"
 
+import "unsafe"
+
 type Simhasher struct {
 	hasher C.Simhasher
 }
@@ -14,7 +16,12 @@ type Simhasher struct {
 func New(paths ...string) Simhasher {
 	dictpaths := getDictPaths(paths...)
 
-	dpath, hpath, _, ipath, spath := C.CString(dictpaths[0]), C.CString(dictpaths[1]), C.CString(dictpaths[2]), C.CString(dictpaths[3]), C.CString(dictpaths[4])
+	dpath, hpath, ipath, spath := C.CString(dictpaths[0]), C.CString(dictpaths[1]), C.CString(dictpaths[3]), C.CString(dictpaths[4])
+	defer C.free(unsafe.Pointer(dpath))
+	defer C.free(unsafe.Pointer(hpath))
+	defer C.free(unsafe.Pointer(ipath))
+	defer C.free(unsafe.Pointer(spath))
+
 	var x Simhasher
 	x.hasher = C.NewSimhasher(dpath, hpath, ipath, spath)
 	return x
@@ -25,5 +32,8 @@ func (x Simhasher) Free() {
 }
 
 func (x Simhasher) MakeSimhash(s string, top_n int) uint64 {
-	return uint64(C.MakeSimhash(x.hasher, C.CString(s), C.int(top_n)))
+	cs := C.CString(s)
+	defer C.free(unsafe.Pointer(cs))
+
+	return uint64(C.MakeSimhash(x.hasher, cs, C.int(top_n)))
 }
